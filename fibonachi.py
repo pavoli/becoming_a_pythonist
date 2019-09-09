@@ -20,5 +20,9 @@ def fibo(n: int) -> List[int]:
     print(s1)
     return s1
 
+# alternative solution
+fib = lambda a, b=[-1, 1]: [b.append(b[-1] + b[-2]) or b[-1] for _ in range(a)]
+print(fib(8))
+
 
 assert [1, 1, 2, 3, 5, 8, 13, 21] == fibo(8)
