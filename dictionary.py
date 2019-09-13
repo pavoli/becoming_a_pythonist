@@ -50,38 +50,38 @@ def simpleDict():
 def print_translate(param=None):
     if param == 'None':
         for key in simple_dict:
-            print '%s [%s]' % (key, simple_dict[key]['translate'])
+            print('%s [%s]' % (key, simple_dict[key]['translate']))
     else:
-        print '%s [%s]' % (param, simple_dict[param]['translate'])
+        print('%s [%s]' % (param, simple_dict[param]['translate']))
 
 
 def print_all():
     for key in simple_dict:
-        print '*' * 50
-        print 'слово: %s [%s]' % (key, simple_dict[key]['translate'])
-        print ''
+        print('*' * 50)
+        print('слово: %s [%s]' % (key, simple_dict[key]['translate']))
+        print('')
         for item in simple_dict[key]:
             if not item == 'translate':
-                print '%s:' % item
+                print('%s:' % item)
                 for value in simple_dict[key][item]:
-                    print '     %s' % value
+                    print('     %s' % value)
 
 
 def print_meaning(word, type):
-    print '%s' % word
+    print('%s' % word)
     for item in simple_dict[word][type]:
-        print '-%s' % item
+        print('-%s' % item)
 
 
 def print_word(param):
-    print '*' * 50
-    print 'word: %s' % param
+    print('*' * 50)
+    print('word: %s' % param)
     for key in simple_dict[param]:
-        print ''
+        print('')
         if not key == 'translate':
-            print key
+            print(key)
             for value in simple_dict[param][key]:
-                print '-%s' % value
+                print('-%s' % value)
 
 
 def main(param=None):
