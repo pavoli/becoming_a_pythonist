@@ -20,6 +20,16 @@ def fibo(n: int) -> List[int]:
     print(s1)
     return s1
 
+
+def fibonachi(n: int) -> List[int]:
+    fib1 = fib2 = 1
+    if n <= 2:
+        return [fib1] * n
+    else:
+        for i in range(2, n):
+            pass
+
+
 # alternative solution
 fib = lambda a, b=[-1, 1]: [b.append(b[-1] + b[-2]) or b[-1] for _ in range(a)]
 print(fib(8))
