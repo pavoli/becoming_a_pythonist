@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'p.olifer'
 
+from collections import Counter
 
 def is_poly(string: str) -> bool:
     d = Counter(string)
